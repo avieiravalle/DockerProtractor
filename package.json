@@ -1,0 +1,21 @@
+{
+  "name": "tests-with-docker",
+  "version": "1.0.0",
+  "description": "Sample project to run Protractor tests on Chrome  headless running on Docker containers",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "npm run test:chrome && npm run test:firefox",
+    "test:chrome": "protractor tests/configurations/chrome.conf.js",
+    "test:firefox": "protractor tests/configurations/firefox.conf.js",
+    "test:multi": "protractor tests/configurations/multiCapabilities.conf.js",
+    "test:chrome:parallel": "protractor tests/configurations/chromeShard.conf.js"
+  },
+  "author": "avieiravalle",
+  "license": "ISC",
+  "dependencies": {
+    "protractor": "^5.4.2"
+  }
+}
