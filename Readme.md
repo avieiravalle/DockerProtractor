@@ -14,11 +14,13 @@ Selenium, Selenium Chorme headless and Selenium Firefox headless images need to 
 1.Chrome
 
 docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-chrome:3.141.59-selenium
+
 docker run -d -p 4444:4444 --shm-size=2g selenium/standalone-chrome:3.141.59-selenium
 
 2.Firefox
 
 docker run -d -p 4444:4444 -v /dev/shm:/dev/shm selenium/standalone-firefox:3.141.59-selenium
+
 docker run -d -p 4444:4444 --shm-size 2g selenium/standalone-firefox:3.141.59-selenium
 ***********************************************************************************************
 
