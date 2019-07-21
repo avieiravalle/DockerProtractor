@@ -7,19 +7,20 @@ Sample project to experiment with Protractor tests running on Chrome and Firefox
 Docker needs to be installed and running.
 Selenium, Selenium Chorme headless and Selenium Firefox headless images need to be pulled from Docker Hub.
 
-Use the following command to pull the images from Docker Hub: docker pull selenium/hub && docker pull selenium/node-chrome && docker pull selenium/node-chrome-debug && docker pull selenium/node-firefox && docker pull selenium/node-firefox-debug
+* Use the following command to pull the images from Docker Hub: 
+docker pull selenium/hub && docker pull selenium/node-chrome && docker pull selenium/node-chrome-debug && docker pull selenium/node-firefox && docker pull selenium/node-firefox-debug
 
 * Installation
 Run npm i to install the project dev dependencies.
 
-Before running the tests
+# Before running the tests
 Before running the tests, make sure that Selenium hub, Chrome headless, and Firefox headless containers are up and runnning.
-Use docker ps -a to check if they are up and running.
-If they are not running, use docker-compose up -d to start them.
+Use <docker ps -a> to check if they are up and running.
+If they are not running, use <docker-compose up -d> to start them.
 
-* To restart the containers use docker-compose restart.
+* To restart the containers use <docker-compose restart>.
 
-* To shut down the containers use docker-compose down.
+* To shut down the containers use <docker-compose down>.
 
 * Checking Selenium Grid
 With the containers up and running, access the following URL in your preferred browser to check that the Selenium Grid was correctly setup: <http://localhost:4444/grid/console.>
